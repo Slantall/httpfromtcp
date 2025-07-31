@@ -16,7 +16,7 @@ func main() {
 		if err != nil {
 			fmt.Println("Error with listener: %w\n", err)
 		}
-		fmt.Printf("Connection accepted: %v\n", connection)
+		//fmt.Printf("Connection accepted: %v\n", connection)
 		str_ch := getLinesChannel(connection)
 		for s := range str_ch {
 			fmt.Printf("read: %s\n", s)
